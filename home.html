@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>iKnow | Home</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<link rel="stylesheet" type="text/css" href="home.css">
+	<style>
+		.menuOpt{	color:white;
+				background-color:rgba(246, 114, 128, 0.7);
+				box-shadow: 0px 5px rgba(219, 77, 92, 0.7);
+				text-align:center;
+				text-transform: uppercase;
+				font-size: 13px;
+				position: -webkit-sticky;
+  				position: sticky;
+  				top: 0px;
+				-webkit-backdrop-filter: blur(8px);
+				backdrop-filter: blur(8px);}
+		nav a	{	color:white;
+				transition: .25s;
+				text-decoration:none;}
+		nav li	{	display: block;
+				padding: 14px 25px;}
+		nav li:hover {	background: rgba(255, 186, 90, 0.9);
+				box-shadow: 0px 5px rgba(227, 152, 48	, 0.7);
+				transition: .25s;}
+
+	</style>
+</head>
+
+<body>
+
+	<header>
+		<h1 style="display:inline-block;margin:6px;text-shadow: 3px 3px #FFBA5A">iKnow</h1>
+		<p style="padding-top:6px;padding-bottom:6px;margin:0px;font-size:0.75em;text-align:center">O portal com tudo o que você precisa saber (e um pouco mais) sobre o universo de produtos e serviços da Apple!</p>
+	</header>
+
+	<script>
+
+			var scrollMenu = document.getElementById("scrollMenu");
+			var navigationOpen = false;
+
+			function moveNav(){
+			  if (navigationOpen == false){
+			    openNav();} else {
+			      closeNav();}
+			  }
+
+			function openNav() {
+			  document.getElementById("scrollMenu").style.transform = "translateY(56px)";
+			  navigationOpen = true;
+			}
+
+			function closeNav() {
+			  document.getElementById("scrollMenu").style.transform = "translateY(-226px)";
+			  navigationOpen = false;
+			}
+
+	</script>
+
+	<nav id="scrollMenu" class="menuOpt">
+	<ul>
+		<li><a href="home.html">Home</a></li>
+		<li><a href="#">Produtos</a></li>
+		<li><a href="#">Serviços</a></li>
+		<li><a href="#">Novidades</a></li>
+		<li><a href="dicas.html">Dicas</a></li>
+		<li><a href="contato.html">Contato</a></li>
+	</ul>
+		<label id="menuBtn" onclick="moveNav()">Menu</label>
+	</nav>
+
+
+
+	<div class="maintext">
+	<section>
+		<h2><mark>Últimas notícias</mark></h2>
+		<article>
+		<h3><mark>Título da notícia</mark></h3>
+		<p><mark>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</mark></p><br />
+		</article>
+	</section>
+
+	<section style="text-align:center">
+		<h2><mark>Mais visitados</mark></h2>
+		<div style="display:inline-block">
+		<div class="container"><img src="iphones.jpg" alt="iPhones" class="mvimg">
+			<div class="mvbox"><div class="mvtxt">iPhones</div></div></div>
+		<div class="container"><img src="ipads.jpg" alt="iPads" class="mvimg">
+			<div class="mvbox"><div class="mvtxt">iPads</div></div></div>
+		<div class="container"><img src="macbooks.png" alt="Macbooks" class="mvimg">
+			<div class="mvbox"><div class="mvtxt">Macbooks</div></div></div>
+		<div>
+	</section>
+
+	<section style="margin: 50px 0 0 0">
+		<h2><mark>Últimas notícias</mark></h2>
+		<article>
+		<h3><mark>Título da notícia</mark></h3>
+		<p><mark>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</mark></p><br />
+		</article>
+	</section>
+</div>
+	<footer style="color:white;background-color:black;opacity:0.7;text-align:center;padding:15px">
+		<a href="mailto:contato@iknow.com">contato@iknow.com</a>
+		<p style="text-align:center">© 2021 iKnow Ltda.	<a href="#">Política de Privacidade</a> <a href="#">Termos e Condições</a> <a href="#">Avisos Legais</a></p>
+
+		<script src="footer.js"></script>
+	</footer>
+</body>
+</html>

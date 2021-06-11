@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>iKnow | Home</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<style>
+		nav	{	color:white;
+				background-color:rgba(246, 114, 128, 0.7);
+				box-shadow: 0px 5px rgba(219, 77, 92, 0.7);
+				text-align:center;
+				text-transform: uppercase;
+				font-size: 13px;
+				position: -webkit-sticky;
+  				position: sticky;
+  				top: 0;
+				-webkit-backdrop-filter: blur(8px);
+				backdrop-filter: blur(8px);}
+		nav a	{	color:white;
+				transition: .25s;
+				text-decoration:none;}
+		nav li	{	display: block;
+				padding: 14px 25px;}
+		nav li:hover {	background: rgba(255, 186, 90, 0.9);
+				box-shadow: 0px 5px rgba(227, 152, 48	, 0.7);
+				transition: .25s;}
+		nav ul	{	margin:0px;
+				padding:0px;
+				display:flex;
+				flex-direction:row;
+				align-items: center;
+				justify-content:center;}
+	</style>
+</head>
+
+<body>
+
+	<header>
+		<h1 style="display:inline-block;margin:6px;text-shadow: 3px 3px #FFBA5A">iKnow</h1>
+		<p style="padding-top:6px;padding-bottom:6px;margin:0px;font-size:12px;text-align:center">O portal com tudo o que você precisa saber (e um pouco mais) sobre o universo de produtos e serviços da Apple!</p>
+	</header>
+
+	<nav class="menu-opt">
+	<ul>
+		<li><a href="home.html">Home</a></li>
+		<li><a href="#">Produtos</a></li>
+		<li><a href="#">Serviços</a></li>
+		<li><a href="#">Novidades</a></li>
+		<li><a href="dicas.html">Dicas</a></li>
+		<li><a href="contato.html">Contato</a></li>
+	</ul>
+		<label id="menu">Menu</label>
+	</nav>
+
+	<div class="maintext">
+	<section style="text-align:center">
+		<h2>Dicas</h2>
+		<article>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/sd-q8Coe4E0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+		<br /><br /><br />
+		</article>
+	</section>
+	</div>
+
+	<footer style="color:white;background-color:black;opacity:0.7;text-align:center;padding:15px">
+		<a class="footer" href="mailto:contato@iknow.com">contato@iknow.com</a>
+		<p style="text-align:center">© 2021 iKnow Ltda.	<a class="footer" href="#">Política de Privacidade</a> <a class="footer" href="#">Termos e Condições</a> <a class="footer" href="#">Avisos Legais</a></p>
+
+		<script src="footer.js"></script>
+	</footer>
+</body>
+</html>
